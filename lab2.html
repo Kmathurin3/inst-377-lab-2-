@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INST377 Lab 2</title>
+
+  <style>
+    /* Background color for page */
+    body {
+      background-color: #f7d6e0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Div that styles the form */
+    .form-box {
+      background-color: white;
+      width: 500px;
+      padding: 20px;
+      margin: 40px;
+      border-radius: 8px;
+    }
+
+    /* Label styling */
+    label {
+      font-size: 18px;
+      display: inline-block;
+      width: 80px;
+    }
+
+    /* Text boxes */
+    input[type="text"],
+    input[type="email"] {
+      padding: 6px;
+      width: 250px;
+      margin-bottom: 10px;
+    }
+
+    /* Submit button */
+    input[type="submit"] {
+      background-color: hotpink;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    /* Hover effect */
+    input[type="submit"]:hover {
+      background-color: deeppink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-box">
+    <h1>Contact Me</h1>
+
+    <!-- Form redirects to thanks.html -->
+    <form action="thanks.html">
+      <div>
+        <label>Name:</label>
+        <input type="text" required>
+      </div>
+
+      <div>
+        <label>Email:</label>
+        <input type="email">
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
